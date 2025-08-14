@@ -26,7 +26,7 @@ AGHBaseMonster::AGHBaseMonster()
 	}
 	else
 	{
-		AIControllerClass = ((AGHBaseMonster*)AGHBaseMonster::StaticClass()->GetDefaultObject())->AIControllerClass;
+		AIControllerClass = ((AGHBaseMonster* )AGHBaseMonster::StaticClass()->GetDefaultObject())->AIControllerClass;
 	}
 
 	TargetComponent = CreateDefaultSubobject<UBattleTargetComponent>(TEXT("TargetComponent"));
@@ -43,10 +43,9 @@ void AGHBaseMonster::BeginPlay()
 	SpawnDefaultController();
 
 	BornLocation = GetActorLocation();
-	AGHBaseAIController* aiController = Cast<AGHBaseAIController>(GetController());
-	if (aiController != nullptr)
+	if (AGHBaseAIController* AIController = Cast<AGHBaseAIController>(GetController());AIController != nullptr)
 	{
-		aiController->SetBornLocation(BornLocation);
+		AIController->SetBornLocation(BornLocation);
 	}
 }
 

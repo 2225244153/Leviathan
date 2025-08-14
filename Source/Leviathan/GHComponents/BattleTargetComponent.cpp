@@ -33,9 +33,9 @@ void UBattleTargetComponent::BeginPlay()
 
 	EXECUTE_ON_SERVER
 	{
-		UGHCoreDelegatesMgr* coreDelegatesMgr = Cast<UGHGameInstace>(GetWorld()->GetGameInstance())->CoreDelegatesMgr;
-		coreDelegatesMgr->OnAIStateChanged.AddUniqueDynamic(this, &UBattleTargetComponent::OnAIStateChanged);
-		coreDelegatesMgr->OnCharacterHurt.AddUniqueDynamic(this, &UBattleTargetComponent::OnHurt);
+		UGHCoreDelegatesMgr* CoreDelegatesMgr = Cast<UGHGameInstace>(GetWorld()->GetGameInstance())->CoreDelegatesMgr;
+		CoreDelegatesMgr->OnAIStateChanged.AddUniqueDynamic(this, &UBattleTargetComponent::OnAIStateChanged);
+		CoreDelegatesMgr->OnCharacterHurt.AddUniqueDynamic(this, &UBattleTargetComponent::OnHurt);
 	}
 }
 

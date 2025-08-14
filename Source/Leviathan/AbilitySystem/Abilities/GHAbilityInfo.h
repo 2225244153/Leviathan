@@ -1,5 +1,4 @@
 #pragma once
-#include "GHGameplayAbility.h"
 #include "GHAbilityInfo.generated.h"
 
 USTRUCT(BlueprintType)

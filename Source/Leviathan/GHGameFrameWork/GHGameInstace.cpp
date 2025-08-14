@@ -35,6 +35,10 @@ void UGHGameInstace::GHInit()
 	{
 		GetWorld()->GetTimerManager().SetTimer(TickTimerHandle, this, &UGHGameInstace::TickTimer, 0.02, true);
 	}
+
+	GHDebugAIMonster(1,1);
+	GHDebugAIMonster(2,1);
+	GHDebugAIMonster(3,1);
 }
 
 void UGHGameInstace::StartGameInstance()

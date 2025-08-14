@@ -51,9 +51,9 @@ public:
 	USkillKnockComponent* SkillKnockComponent;
 
 	UFUNCTION(BlueprintCallable, NetMulticast, Unreliable, WithValidation)
-	void NetMulticast_PlayAnimMontage(UAnimMontage* montage);
+	void NetMulticast_PlayAnimMontage(UAnimMontage* Montage);
 	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
-	void NetMulticast_StopAnimMontage(class UAnimMontage* AnimMontage = nullptr);
+	void NetMulticast_StopAnimMontage(UAnimMontage* AnimMontage = nullptr);
 
 private:
 	bool ASCInitialized = false;

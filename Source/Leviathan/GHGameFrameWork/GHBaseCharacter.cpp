@@ -87,14 +87,14 @@ bool AGHBaseCharacter::NetMulticast_PlayAnimMontage_Validate(UAnimMontage* monta
 	return montage->IsValidLowLevelFast();
 }
 
-void AGHBaseCharacter::NetMulticast_StopAnimMontage_Implementation(class UAnimMontage* AnimMontage)
+void AGHBaseCharacter::NetMulticast_StopAnimMontage_Implementation(UAnimMontage* AnimMontage)
 {
 	StopAnimMontage(AnimMontage);
 }
 
-void AGHBaseCharacter::NetMulticast_PlayAnimMontage_Implementation(UAnimMontage* montage)
+void AGHBaseCharacter::NetMulticast_PlayAnimMontage_Implementation(UAnimMontage* Montage)
 {
-	PlayAnimMontage(montage);
+	PlayAnimMontage(Montage);
 }
 
 void AGHBaseCharacter::InitAbilitySystemComponent(AActor* OwnerActor)

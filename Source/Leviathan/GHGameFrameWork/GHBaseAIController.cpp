@@ -18,6 +18,7 @@ AGHBaseAIController::AGHBaseAIController() : BaseMonster(nullptr)
 void AGHBaseAIController::BeginPlay()
 {
 	Super::BeginPlay();
+
 	
 }
 
@@ -32,11 +33,11 @@ void AGHBaseAIController::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-void AGHBaseAIController::SetBornLocation(FVector& bornLocation)
+void AGHBaseAIController::SetBornLocation(FVector& BornLocation)
 {
 	if (Blackboard != nullptr)
 	{
-		Blackboard->SetValueAsVector(TEXT("BornLocation"), bornLocation);
+		Blackboard->SetValueAsVector(TEXT("BornLocation"), BornLocation);
 	}
 }
 
