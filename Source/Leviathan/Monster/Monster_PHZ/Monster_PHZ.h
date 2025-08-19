@@ -25,5 +25,7 @@ protected:
 	UFUNCTION()
 	void OnCharacterHurt(int32 SponsorId, int32 TargetId);
 
+	UFUNCTION()
+	void OnCharacterDeath(int32 SponsorId, int32 TargetId);
 	
 };

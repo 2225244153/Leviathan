@@ -41,6 +41,7 @@
 !Plugins/Unlua/Source/**/*.dll
 Plugins/Unlua/Source/UnluaDefaultParamCollectorUbtPlugin/obj/*
 Plugins/Unlua/Source/UnluaDefaultParamCollectorUbtPlugin/UnLuaDefaultParamCollectorUbtPlugin.ubtplugin.csproj.props
+Plugins/UnLua/Source/UnLuaDefaultParamCollectorUbtPlugin/obj/rider.project.model.nuget.info
 
 # .idea
 Content/Python/.idea/*
@@ -91,3 +92,5 @@ Plugins/*/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+Leviathan.sln.DotSettings.user

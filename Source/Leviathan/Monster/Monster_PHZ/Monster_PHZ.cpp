@@ -14,16 +14,21 @@ void AMonster_PHZ::BeginPlay()
 	{
 		CoreDelegatesMgr->OnAIStateChanged.AddDynamic(this,&AMonster_PHZ::OnAIStateChanged);
 		CoreDelegatesMgr->OnCharacterHurt.AddDynamic(this,&AMonster_PHZ::OnCharacterHurt);
+		CoreDelegatesMgr->OnCharacterDeath.AddDynamic(this,&AMonster_PHZ::OnCharacterDeath);
 	}
 }
 
 void AMonster_PHZ::OnAIStateChanged(FGameplayTag& OldTag, FGameplayTag& NewTag)
 {
-	UGHLog::DebugMessage(DL_Info, "AI State: " + OldTag.ToString());
-	UGHLog::DebugMessage(DL_Info, "AI State: " + NewTag.ToString());
+	
 }
 
 
 void AMonster_PHZ::OnCharacterHurt(int32 SponsorId, int32 TargetId)
 {
 }
+
+void AMonster_PHZ::OnCharacterDeath(int32 SponsorId, int32 TargetId)
+{
+}
+

@@ -1,6 +1,8 @@
 #include "GHGameplayAbility.h"
 #include "Leviathan/AbilitySystem/Component/GHAbilitySystemComponent.h"
+#include "Leviathan/Common/Const_Text.h"
 #include "Leviathan/GHGameFrameWork/GHBaseCharacter.h"
+#include "Leviathan/GHGameFrameWork/GHGameInstace.h"
 #include "Leviathan/GHManagers/GHCoreDelegatesMgr.h"
 
 DEFINE_LOG_CATEGORY(LogGHGameplayAbility)

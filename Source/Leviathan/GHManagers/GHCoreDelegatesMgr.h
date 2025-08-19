@@ -2,7 +2,6 @@
 
 #include "CoreMinimal.h"
 #include "GameplayTagContainer.h"
-#include "Leviathan/GHGameFrameWork/GHGameInstace.h"
 #include "GHCoreDelegatesMgr.generated.h"
 
 DECLARE_DELEGATE_OneParam(FOnBattleSearchTarget, int32)
